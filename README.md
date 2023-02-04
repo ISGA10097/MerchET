@@ -35,7 +35,7 @@
    </style>
    </head>
    <body>
-     <img src="./Jackenaktion_web_files/logo2.jpg" width="100" height="100 text-align: right">
+     <img src="C:\Users\Eva\Desktop\ET/logo2.jpg" width="100" height="100 text-align: right">
      <br>
      <br>
      <br>
@@ -74,9 +74,9 @@
     <br>
     <br>
     <br>
-    <img src="ET/softshelljacke2.png" width="200" height="200">
-    <img src="ET/softshelljacke3.png" width="200" height="200">
-    <img src="ET/softshelljacke.png" width="200" height="200">
+    <img src="C:\Users\Eva\Desktop\ET/softshelljacke2.png" width="200" height="200">
+    <img src="C:\Users\Eva\Desktop\ET/softshelljacke3.png" width="200" height="200">
+    <img src="C:\Users\Eva\Desktop\ET/softshelljacke.png" width="200" height="200">
     <br>
     <br>
     <br>
