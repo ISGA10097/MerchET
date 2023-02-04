@@ -75,7 +75,7 @@
     <br>
     <br>
     <br>
-    <img src="C:\Users\Eva\Desktop\ET/softshelljacke2.png" width="200" height="200">
+    <img src="https://cdn.engelbert-strauss.at/bundles/manualproductcomparison/1.67.5/js/external/ie-promise-polyfill.min.js" width="200" height="200">
     <img src="C:\Users\Eva\Desktop\ET/softshelljacke3.png" width="200" height="200">
     <img src="C:\Users\Eva\Desktop\ET/softshelljacke.png" width="200" height="200">
     <br>
