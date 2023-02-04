@@ -51,7 +51,7 @@
      <br>
      <br>
      <form id="myForm">
-        <input placeholder="E-Mail" type="email" name="E-Mail">
+        <input placeholder="E-Mail" type="email" name="e-Mail">
         <br>
         <label for="size">Größe/ Size</label>
           <select name="size" id="size">
