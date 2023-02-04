@@ -76,8 +76,8 @@
     <br>
     <br>
     <img src="https://cdn.engelbert-strauss.at/bundles/manualproductcomparison/1.67.5/js/external/ie-promise-polyfill.min.js" width="200" height="200">
-    <img src="C:\Users\Eva\Desktop\ET/softshelljacke3.png" width="200" height="200">
-    <img src="C:\Users\Eva\Desktop\ET/softshelljacke.png" width="200" height="200">
+    <img src="https://cdn.engelbert-strauss.at/assets/pdp/images/Two_MainImage_Desktop/product/2.Release.3131500/Softshell_Jacke_dryplexx_softlight-263890-0-638028865162697296.png" width="200" height="200">
+    <img src="https://superzoom.onlinesuperimage.com/fsicache/server?source=/3D%20Images/strauss/78110-1/78_11_046_R001.png&height=500" width="200" height="200">
     <br>
     <br>
     <br>
