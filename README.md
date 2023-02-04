@@ -36,7 +36,7 @@
    </style>
    </head>
    <body>
-     <img src="logo2.jpg" width="100" height="100 text-align: right">
+     <img src=""C:\Users\Eva\Desktop\ET\logo2.jpg" width="100" height="100 text-align: right">
      <br>
      <br>
      <br>
