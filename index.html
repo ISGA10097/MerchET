@@ -6,27 +6,27 @@
     integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous">
    </script>
-   <script>
+  <script>
   function SubForm (){
-    var email = $("input[name='email']").val();
+    var email = $("#email").val();
     if (!email) {
-      alert("Email is required");
+      alert("Please enter an email address");
       return;
     }
-      function SubForm (){
-         $.ajax({
-             url:'https://api.apispreadsheets.com/data/faxlPLB09wddvLPd/',
-             type: 'post',
-             data:$("#myForm").serializeArray(),
-             success: function(){
-                alert("Form Data Submitted :)")
-             },
-             error: function(){
-                alert("There was an error: (")
-             }
-          });
-       }
-   </script>
+
+    $.ajax({
+      url:'https://api.apispreadsheets.com/data/faxlPLB09wddvLPd/',
+      type: 'post',
+      data:$("#myForm").serializeArray(),
+      success: function(){
+        alert("Form Data Submitted :)")
+      },
+      error: function(){
+        alert("There was an error: (")
+      }
+    });
+  }
+</script>
    <style>
      body {
       font-family: Calibri, calibri light; 
