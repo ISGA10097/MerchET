@@ -7,6 +7,12 @@
     crossorigin="anonymous">
    </script>
    <script>
+  function SubForm (){
+    var email = $("input[name='email']").val();
+    if (!email) {
+      alert("Email is required");
+      return;
+    }
       function SubForm (){
          $.ajax({
              url:'https://api.apispreadsheets.com/data/faxlPLB09wddvLPd/',
