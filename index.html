@@ -7,19 +7,20 @@
     crossorigin="anonymous">
    </script>
   <script>
-     $.ajax({
-      url:'https://api.apispreadsheets.com/data/faxlPLB09wddvLPd/',
-      type: 'post',
-      data:$("#myForm").serializeArray(),
-      success: function(){
-        alert("Form Data Submitted :)")
-      },
-      error: function(){
-        alert("There was an error: (")
-      }
-    });
-  }
-</script>
+      function SubForm (){
+         $.ajax({
+             url:'https://api.apispreadsheets.com/data/faxlPLB09wddvLPd/',
+             type: 'post',
+             data:$("#myForm").serializeArray(),
+             success: function(){
+                alert("Form Data Submitted :)")
+             },
+             error: function(){
+                alert("There was an error: (")
+             }
+          });
+       }
+   </script>
    <style>
      body {
       font-family: Calibri, calibri light; 
