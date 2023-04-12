@@ -1,15 +1,137 @@
-  <html>
-  <title>Jackenaktion ET</title>
-   <head>
+<html>
+  <title>Energietechniker Merch</title>
    <script
     src="https://code.jquery.com/jquery-3.6.3.js"
     integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous">
    </script>
-  <script>
+   <script>
+      function SubForm (){
+        $.ajax({
+  url:'https://api.apispreadsheets.com/data/Q5FCOqa96MVassje/',
+  type: 'post',
+  data: {
+    'e-Mail': $('#myForm [name="e-Mail"]').val(),
+    'size': $('#myForm [name="size"]').val(),
+    'color': $('#myForm [name="color"]').val(),
+    'cap': $('#myForm [name="cap"]').prop('checked') ? 'yes' : 'no'
+  },
+  success: function(){
+    alert("Form Data Submitted :)")
+  },
+  error: function(){
+    alert("There was an error :(")
+  }
+});
+       }
+   </script>
+
+
+<style>
+    body {
+      font-family: Calibri, calibri light;
+      color: white;
+      background-color: #19b5fe;
+      background-image: linear-gradient(45deg, #19b5fe, #16a085, #27ae60, #2980b9, #8e44ad);
+      text-align: center;
+      background-size: 600% 600%;
+      animation: gradient-bg 15s ease infinite;
+    }
+    
+    @keyframes gradient-bg {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+    
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+    
+    footer {
+      margin-top: 4rem;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    
+    img {
+      margin-top: 2rem;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    
+    input[type="submit"] {
+      font-size: 1.2rem;
+      background-color: #27ae60;
+      border: none;
+      border-radius: 0.4rem;
+      padding: 1rem 2rem;
+      color: #fff;
+      font-weight: 400;
+      cursor: pointer;
+      margin-top: 2rem;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #2ecc71;
+    }
+    
+    select {
+      font-size: 1.2rem;
+      border: none;
+      background-color: #fff;
+      color: #19b5fe;
+      padding: 0.8rem;
+      border-radius: 0.4rem;
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 300;
+      width: 10rem;
+    }
+    
+    input[type="email"] {
+      font-size: 1.2rem;
+      border: none;
+      background-color: #fff;
+      color: #19b5fe;
+      padding: 0.8rem;
+      border-radius: 0.4rem
+
+   <title>Energietechnik Merch</title>
+   <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous">
+   </script>
+   <script>
       function SubForm (){
          $.ajax({
-             url:'https://api.apispreadsheets.com/data/faxlPLB09wddvLPd/',
+             url:'https://api.apispreadsheets.com/data/Q5FCOqa96MVassje/',
              type: 'post',
              data:$("#myForm").serializeArray(),
              success: function(){
@@ -21,6 +143,13 @@
           });
        }
    </script>
+
+
+
+
+
+
+
    <style>
      body {
       font-family: Calibri, calibri light; 
@@ -36,55 +165,77 @@
    </style>
    </head>
    <body>
-     <img src="https://lh3.googleusercontent.com/BnU5phVvAWfIeg_qUhdo6v8YC75o0adUAXZeGdILoK17USBWRGPHySA4qHe9HQ3_bmVzhUthWKa_VyRYhfUuiVK72HXXnnTW-II148arNII24gObbBax2jths_OASE9bJlbnkAPzJPjJnjSZAtZPiDf5eoDkniXom2JepKYfgYHTBHDNxlplRz3q4HDAENg6bCAg80fY3IJ7VI1S-enIDot4lo-j5kGrINrd_Ri58i1iLac6O_9FbC_TcfVR-NcGqkoaQaFk12U_CVrirqwiH6uekcq3YqX6ibWpOuWDVQ1XqiUr6MzF9ECn7V6uzeaGAfKp5RoeZboouWInvHZHePVi1IKkchCmmL0pMgo2rHTqPJy9WnsC2H87WWdS2m_U9x4ZRYRd6iBEnpc4OPyU0cxfV0aa_U61W-vMKEi-RZNR-M1iJwiRRZs9sby7xDGi_CQzHeFI1iyLi8PCfbeX24JbJUvASQdkcKwyDSPgMXe33KCkk7hwgP4oRRRp0Ku2WzMcE-sqNPOPyXGBDipgSQFVAJinyh15ValTNI1zgTOfsqKvQoGjIycr_9NYDH9Ps3IqoVxfDxnbsaAWySwz4FKd2S-TAjyU7xeNd3sNvm8wlGckBA_ejIIfIK1Jdo05pcTM2MHhTW0MKg2q7a4zemIglevTXzgTgn41A5LvX3VY-8GqyRCf0_i5DXDEBEL4EqM0wnO4IqginQaDhgsL38wb_CDUs3IQKqr9yyVmikBUxfZDfvSint4jc8RMVhAi90JA07ubshO3rd7WoFCfUOe-FUcLEgju5QO7aIO2iKgSm-QCAnNere6a8t3P3rYkHF85TOlJLprO_Mw0ra2JilfzpNuTc0_xkZS4LQimipBhJ_cxkCNE5AX4HU_AzudAEaGEc4WgS8g_FohqusDrd97ITKDqRl0osEWidWdNRzsABtYp=w607-h687-no?authuser=0" width="100" height="100 text-align: right">
+     <img src="C:\Users\Eva\Desktop\ET/logo2.jpg" width="100" height="100 text-align: right">
      <br>
      <br>
      <br>
-     <h1> <font color="#9dbcd4">Softshelljackenaktion der Energietechniker</font></h1>
+     <h1> <font color="white">Merch der Energietechniker</font></h1>
      <br>
      Liebe Energietechniker und Energietechnikerinnen!
      <br>
-     Bei Interesse an einer Softshelljacke bitten wir euch, 
+     Bei Interesse an einem Hoodie und oder einer Kappe bitten wir euch, 
      <br>
      eure E-Mail-Adresse anzugeben sowie eure gewünschte Größe auszuwählen.
+     <br>
+     Die Größen könnt ihr aus den jeweiligen Bildern unten entnehmen, da es leider keine Anprobe dazu geben wird.
+     <br>
+     Wir bitten euch zudem nur einen Pulli und eine Kappe pro Person zu reservieren.
      <br>
      <h3>Glück Auf!</h3>
      <br>
      <br>
      <form id="myForm">
-        <input placeholder="E-Mail" type="email" name="e-Mail">
-        <br>
-        <label for="size">Größe/ Size</label>
-          <select name="size" id="size">
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>+
-            <option value="XL">XL</option>
-            <option value="2XL">2XL</option>
-            <option value="3XL">3XL</option>
-            <option value="4XL">4XL</option>
-            <option value="5XL">5XL</option>
-            <option value="6XL">6XL</option>
-          </select>
-     </form>
-     <br>
-     <br>
-      <input type="submit" name="submit" onclick="SubForm(); return false;" >
+  <input placeholder="E-Mail" type="email" name="e-Mail">
+  <br>
+  <label for="size">Größe/ Size</label>
+  <select name="size" id="size">
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="2XL">2XL</option>
+    <option value="3XL">3XL</option>
+    <option value="4XL">4XL</option>
+    <option value="5XL">5XL</option>
+    <option value="6XL">6XL</option>
+  </select>
+  <br>
+  <label for="color">Farbe/ Color</label>
+  <select name="color" id="color">
+    <option value="Farbe">Farbe</option>
+    <option value="weiß">weiß</option>
+    <option value="dunkelblau">dunkelblau</option>
+    <option value="rosa">rosa</option>
+    <option value="grün">grün</option>
+    <option value="grau">grau</option> 
+  </select>
+  <br>
+  <label for="cap">Kappe/ Cap</label>
+  <input type="checkbox" name="cap" id="cap">
 </form>
-    <p> Einmal Klicken reicht :) </p>
+     <br>
+     <br>
+     <input type="submit" name="submit" onclick="SubForm(); return false;" >
+   <p>Frauen/ Women</p>
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/1v.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/1h.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/2v.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/2h.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/3v.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/3h.png.jpg" width="150" height="200">
     <br>
+    <p>Männer/ Men</p>
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/4v.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/4h.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/5v.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/5h.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/6v.png.jpg" width="150" height="200">
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/6h.png.jpg" width="150" height="200">
+    <p>Größen Männer (links)  /  Frauen (rechts)</p>
+    <img src="C:\Users\Eva\Desktop\ET\Hoodies/men.png.jpg" width="150" height="200">    <img src="C:\Users\Eva\Desktop\ET\Hoodies/women.png.jpg" width="150" height="200">
     <br>
-    <br>
-    <br>
-    <img src="https://superzoom.onlinesuperimage.com/fsicache/server?source=/3D%20Images/strauss/78110-1/78_11_046_R013.png&height=500" width="200" height="200">
-    <img src="https://superzoom.onlinesuperimage.com/fsicache/server?source=/3D%20Images/strauss/78110-1/78_11_046_R030.png&height=500" width="200" height="200">
-    <img src="https://superzoom.onlinesuperimage.com/fsicache/server?source=/3D%20Images/strauss/78110-1/78_11_046_R001.png&height=500" width="200" height="200">
-    <br>
-    <br>
-    <br>
-    <br>
-<footer>
+   <footer>
 <p> Studienvertretung Energietechnik/ Student Representatives Industrial Energy Technology </p>
 <p>E-Mail: stv-ie@oeh.unileoben.ac.at</p>
 </footer>
